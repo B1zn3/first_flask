@@ -1,9 +1,9 @@
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, flash
 
 
 
 app = Flask(__name__)
-
+app.config['SECRET_KEY'] = 'ffffffffffffffff'
 
 
 @app.route("/home/")
@@ -21,10 +21,15 @@ def about(username):
 @app.route('/register', methods = ['GET', 'POST'])
 def register():
     if request.method == 'POST':
-        FIO = request.form['Username']
-        TEL = request.form['TEL']
-        DATE_BIRTH = request.form['Password']
-        print(FIO, TEL, DATE_BIRTH)
+        if (len(request.form)!=3):
+            FIO = request.form['Username']
+            TEL = request.form['TEL']
+            DATE_BIRTH = request.form['Password']
+            print(FIO, TEL, DATE_BIRTH)
+            flash(message='Данные Отправлены!', category='success')
+        else:
+            flash(message='Ошибка отправки!', category='error')
+
     return render_template('register.html', title='Форма регистрации')
 
 
