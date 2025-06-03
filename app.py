@@ -2,7 +2,7 @@ from flask import Flask, render_template, url_for, request, flash
 import os 
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv() 
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('secret_key')
