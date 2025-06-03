@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='/CSS/index.css') }}">
+    
     <title>{{ title }}</title>
 </head>
 <body> 
@@ -12,16 +13,17 @@
     {% endfor %}
     <div class="conteiner">
         <div class="logo">Sign In</div>
-        <form action="/register" method="post" class="form_1">
+        <form action="/sign_in" method="post" class="form_1">
             <input type="text" name="Username" placeholder="Username">
             <input type="tel" name="TEL" placeholder="Your phonenumber">
             <input type="password" name="Password" placeholder="Password">
             <a href="">Forgot Username/Password?</a>
             <button type="submit">Sign In</button>
         </form>
+        <a href="/home">Главная</a>
         <div class="bottom-text">
         <p>Dont have a account?</p>
-        <a id="a_2" href="">SIGN UP NOW</a>
+        <a href="">SIGN UP NOW</a>
         </div>  
     </div>
 </body>

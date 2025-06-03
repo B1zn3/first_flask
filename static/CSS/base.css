@@ -1,0 +1,47 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(10, 13, 37, 0.881);
+    padding: 0.5% 1%;
+}
+
+.main-menu, .regist {
+    display: flex;
+    padding: 10px;
+}
+
+.main-menu {
+    justify-content: flex-start;
+}
+
+.regist {
+    justify-content: flex-end;
+}
+
+.main-menu a {
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border: 3px ridge #3d76b0;
+    border-radius: 12px; 
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.regist a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    border: 3px ridge #3d76b0;
+    border-radius: 12px; 
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: rgba(61, 118, 176, 0.3);
+}

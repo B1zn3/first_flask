@@ -2,16 +2,15 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
 }
+
 .conteiner {
     text-align: center;
     width: 500px;
     border: 0.5px solid grey ;
     border-radius: 20px;
-    margin-left: 200px;
+    margin: 0% 33%;
 }
     
-
-
 .logo {
     padding: 30px;
     background-color: rgb(23, 188, 23);
@@ -23,11 +22,11 @@
     flex-direction: column;
     height: 350px;
     background-color: white;
-    padding: 50px 100px;
+    padding: 50px 100px 0px;
     justify-content: space-between;
     align-items: center;
 }
-a {
+.form_1 a {
     font-size: 14px;
     margin-left: 35%;
     text-decoration: none;
@@ -68,16 +67,22 @@ button {
     border-radius: 6px;
     font-size: 16px;
     background-color: rgb(23, 188, 23);
+    color: white;
+}
+a {
+    color: rgb(23, 188, 23);
+    font-size: 14px;
+    text-decoration: none;
+    
 }
 .bottom-text {
-    margin-bottom: 15px;
+    margin:45px 0px 10px;
 }
 p {
     color: #e0e4ea;
     font-size: 14px;
 }
-#a_2 {
+.bottom-text a {
     font-size: 16px;
     color: rgb(23, 188, 23);
-    margin-left: 0px;
 }
